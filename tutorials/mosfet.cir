@@ -1,0 +1,9 @@
+this is a simple mosfet circuit
+* vdc 4 0 1
+* vin 1 4 sin(0 1 1k)
+vin 1 0 dc=1 ac=1
+vdd 3 0 3
+Rd 3 2 500
+M1 2 1 0 0 nmosfet w=80u l=1u 
+.model nmosfet nmos(level=1 vto=0.4 kp=200u lambda=0.01 cj=2e-4 cgso=4e-6 cgdo=3e-6 cgbo=2e-7)
+.end
