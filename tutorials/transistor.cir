@@ -1,0 +1,9 @@
+Transfer Characteristics of BJT
+vin 1 0 0.8
+Rb 1 2 50k
+vcc 5 0 10 
+Rc 5 4 1k
+vdummy 4 3 0
+Q1 3 2 0 mybjt
+.model mybjt npn(Is=1e-16 vje=0.7 bf=200)
+.end
