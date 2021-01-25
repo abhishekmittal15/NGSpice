@@ -1,0 +1,16 @@
+.include TSMC_180nm.txt
+.param LAMBDA=0.09u
+.param width_N={20*LAMBDA}
+
+vgs g gnd 0
+vds d gnd 0
+
+M1      D       G       gnd     gnd  CMOSN   W={width_N}   L={2*LAMBDA}
++ AS={5*width_N*LAMBDA} PS={10*LAMBDA+2*width_N} AD={5*width_N*LAMBDA} PD={10*LAMBDA+2*width_N}
+
+.dc vds 0.05 vgs 0 1.8 0.1
+
+.control
+run 
+plot (-vds#branch) vs v(g)
+.endc
