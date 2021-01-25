@@ -1,0 +1,6 @@
+half wave rectifier code
+vin 1 0 sin(0 60 1k)
+D1 1 2 mydio
+R1 2 0 1k
+.model mydio D(Is=1e-16 vj=0.7)
+.end
