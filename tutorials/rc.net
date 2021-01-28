@@ -1,4 +1,4 @@
-This is the first circuit
+This  is the first circuit
 vin 1 0 dc=0 ac=1
 r1 1 2 1k
 c1 2 0 1u
